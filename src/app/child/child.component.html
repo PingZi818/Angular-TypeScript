@@ -1,0 +1,12 @@
+<!-- <p>child works!</p> -->
+<!-- <link rel="stylesheet href="/assets/external-style.css" /> -->
+<!-- <style>
+    h1{
+        color: blue
+    }
+</style> -->
+Say{{ childMessage }}
+<h2>Hello from child</h2>
+<ng-content [question]></ng-content>
+<ng-content [answer]></ng-content>
+<button (click)="sendMessage()">Send Message</button>

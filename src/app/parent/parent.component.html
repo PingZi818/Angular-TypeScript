@@ -1,0 +1,14 @@
+<!-- <p>parent works!</p> -->
+<!-- parent to child using INPUT decorator-->
+<!-- child to parent using OUTPUT decorator-->
+<div class="theme-light">
+  <app-child
+    class="active"
+    [childMessage]="'Hello from parent'"
+    (messageEvent)="receiveMessage($event)"
+  >
+    <!-- slot -->
+    <h3 question>Is this ng-content cool?</h3>
+    <p answer>Yes it is!</p>
+  </app-child>
+</div>
