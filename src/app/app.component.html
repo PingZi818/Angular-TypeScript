@@ -1,4 +1,4 @@
-<app-parent>{{ title }}</app-parent>
+<!-- <app-parent>{{ title }}</app-parent>
 <button (click)="toggleText()">Toggle text</button>
 <p>{{ showText }}</p>
 <p>
@@ -9,4 +9,7 @@
   <tr>
     <td [colSpan]="1 + 1">Three-Four</td>
   </tr>
-</table>
+</table> -->
+<app-sizer [(size)]="fontSizepx"></app-sizer>
+<app-sizer [size]="fontSizepx" (sizeChange)="(fontSizepx)"></app-sizer>
+<div [style.font-size.px]="fontSizepx">Resizible text</div>

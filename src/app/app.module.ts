@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppSizerComponent } from './app-sizer/app-sizer.component';
 import { AppComponent } from './app.component';
-import { HelloWorldComponent } from './hello-world.component';
-import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { GreetingsPipePipe } from './greetings-pipe.pipe';
+import { HelloWorldComponent } from './hello-world.component';
+import { ItemDetailsComponent } from './item-details/item-details.component';
+import { ParentComponent } from './parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,13 @@ import { GreetingsPipePipe } from './greetings-pipe.pipe';
     HelloWorldComponent,
     ParentComponent,
     ChildComponent,
-    GreetingsPipePipe
+    GreetingsPipePipe,
+    ItemDetailsComponent,
+    AppSizerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
